@@ -1,0 +1,31 @@
+﻿<Window x:Class="AutoVerhuurProject.Presentatielaag.Gui.GegevensApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoVerhuurProject.Presentatielaag.Gui"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="Initialiseer Gegevens" Height="450" Width="800">
+    <Grid>
+      
+            <Button Content="Leeg Databank" Width="auto" Height="50"
+                    Margin="10" Click="Button_Click"
+                     Background="LightGray" Foreground="White" Cursor="Hand"/>
+            <Button Grid.Column="1" Content="Initialiseer Gegevens" Width="auto" Height="50" 
+                    Margin="10"  Background="LightGray" Foreground="White"
+                    Click="Button_Click_Initialiseer" Cursor="Hand"/>
+            <Button Grid.Column="2" Content="Autos koppelen aan vestiging" Width="auto" Height="50"
+                    Margin="10"  Background="LightGray" Foreground="White"
+                    Click="Button_Click_AutoToekennen" Cursor="Hand"/>
+  
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+    </Grid>
+</Window>

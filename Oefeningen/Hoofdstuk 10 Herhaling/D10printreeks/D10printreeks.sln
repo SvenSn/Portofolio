@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D10printreeks", "D10printreeks\D10printreeks.csproj", "{D79E6370-7F3E-4E2A-BD45-86F8CAC5DCAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D79E6370-7F3E-4E2A-BD45-86F8CAC5DCAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79E6370-7F3E-4E2A-BD45-86F8CAC5DCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79E6370-7F3E-4E2A-BD45-86F8CAC5DCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79E6370-7F3E-4E2A-BD45-86F8CAC5DCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4DC91BF-8DB0-4D54-B5EF-6B0AA1B4D680}
+	EndGlobalSection
+EndGlobal

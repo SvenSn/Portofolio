@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BusStops.Presentation": {
+      "commandName": "Project",
+      "workingDirectory": "$(SolutionDir)"
+    }
+  }
+}

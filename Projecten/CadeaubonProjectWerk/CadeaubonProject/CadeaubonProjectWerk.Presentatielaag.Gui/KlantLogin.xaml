@@ -1,0 +1,35 @@
+﻿<Window x:Class="CadeaubonProjectWerk.Presentatielaag.Gui.KlantLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadeaubonProjectWerk.Presentatielaag.Gui"
+        mc:Ignorable="d"
+        Title="Log hier in" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/images/LoginSchermBackGroundOptie3.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid >
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="" Height="30" Width="200" Foreground="Red" Name="LoginMeldingen"/>
+            <TextBox Name="EmailKlantLogin" HorizontalAlignment="Center" VerticalAlignment="Center" GotFocus="EmailLoginTextBox_GotFocus" LostFocus="EmailLoginTextBox_LostFocus" 
+                   ></TextBox>
+            <Grid>
+                <PasswordBox Name="PasswoordKlantLogin" HorizontalAlignment="Center"
+                VerticalAlignment="Center" GotFocus="PasswordBox_GotFocus" LostFocus="PasswordBox_LostFocus" PasswordChanged="PasswordBox_PasswordChanged"
+               />
+                <TextBlock x:Name="PasswordPlaceholder"
+                       Text="Wachtwoord"
+                       Foreground="Gray"
+                       Margin="300,0,0,0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       FontSize="14"
+                       IsHitTestVisible="False"/>
+            </Grid>
+            <Button Content="Inloggen" Width="200" Padding="5" Margin="5" Click="Button_Click_Login"/>
+            <Button Content="Registreer" Width="200" Padding="5" Margin="5" Click="Button_Click_Registreer"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

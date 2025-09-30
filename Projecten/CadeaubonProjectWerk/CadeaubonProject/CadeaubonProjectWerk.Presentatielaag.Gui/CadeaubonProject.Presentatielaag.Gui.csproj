@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="images\AccountIcon.png" />
+    <None Remove="images\BestellingenGedaanIcon.png" />
+    <None Remove="images\BestellingenGedaanImage.jpg" />
+    <None Remove="images\BestellingenGedaanImage3.png" />
+    <None Remove="images\BestellingIcon.png" />
+    <None Remove="images\BestellingschermOptie1.jpg" />
+    <None Remove="images\BestellingschermOptie2.jpg" />
+    <None Remove="images\KlantenRegistratieSchermOptie1.jpg" />
+    <None Remove="images\LoginSchermBackgroundImage.jpg" />
+    <None Remove="images\LoginSchermBackGroundOptie2.jpg" />
+    <None Remove="images\LoginSchermBackGroundOptie3.jpg" />
+    <None Remove="images\Optie2BestellingenGedaanImage.jpg" />
+    <None Remove="images\redeemLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.5" />
+    <PackageReference Include="Stripe.net" Version="48.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CadeaubonProject.Domein\CadeaubonProject.Domein.csproj" />
+    <ProjectReference Include="..\CadeaubonProject.PersistentieLaag\CadeaubonProject.PersistentieLaag.Databank.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\AccountIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingenGedaanIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingenGedaanImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingenGedaanImage3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingschermOptie1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\BestellingschermOptie2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\KlantenRegistratieSchermOptie1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\LoginSchermBackgroundImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\LoginSchermBackGroundOptie2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\LoginSchermBackGroundOptie3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\Optie2BestellingenGedaanImage.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\redeemLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

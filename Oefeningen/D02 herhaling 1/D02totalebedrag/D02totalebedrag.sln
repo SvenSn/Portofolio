@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02totalebedrag", "D02totalebedrag\D02totalebedrag.csproj", "{A6047B20-1069-475A-A62D-973B3D7A1AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6047B20-1069-475A-A62D-973B3D7A1AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6047B20-1069-475A-A62D-973B3D7A1AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6047B20-1069-475A-A62D-973B3D7A1AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6047B20-1069-475A-A62D-973B3D7A1AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A10ED11-A7E8-4FCF-B861-F6E2716FE7F4}
+	EndGlobalSection
+EndGlobal

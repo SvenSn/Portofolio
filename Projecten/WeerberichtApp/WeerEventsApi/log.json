@@ -1,0 +1,34 @@
+{
+  "Moment": "2025-05-07T00:54:20.976655+02:00",
+  "Eenheid": 0,
+  "Waarde": 82,
+  "Locatie": {
+    "Naam": "Gent",
+    "Beschrijving": "Grootste stad van Oost-Vlaanderen",
+    "GekendVoor": "Studenten"
+  }
+}
+// nieuwe log entries verschijnen hieronder{"MomentMeting":"2025-05-24T21:33:20.9533114+02:00","Waarde":15.69263496401145,"Eenheid":1,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2415209+02:00","Waarde":5.016703143606758,"Eenheid":0,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-24T21:33:29.2463285+02:00","Waarde":0,"Eenheid":1,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2482559+02:00","Waarde":1037.5201992097905,"Eenheid":3,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2494351+02:00","Waarde":16.597314131559166,"Eenheid":2,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2501525+02:00","Waarde":24.111785201430745,"Eenheid":0,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-24T21:33:29.250821+02:00","Waarde":62.30471471774724,"Eenheid":0,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-24T21:33:29.2514876+02:00","Waarde":1018.3401597965527,"Eenheid":3,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-24T21:33:29.2561884+02:00","Waarde":2.86771203220888,"Eenheid":1,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-24T21:33:29.279148+02:00","Waarde":20.688225300281434,"Eenheid":1,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2799994+02:00","Waarde":10.074310429201855,"Eenheid":2,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-24T21:33:29.2806919+02:00","Waarde":1001.0123395432497,"Eenheid":3,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-25T14:03:51.9012099+02:00","Waarde":15.39414883003408,"Eenheid":2,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-25T14:03:51.9223304+02:00","Waarde":1026.864798646054,"Eenheid":3,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9238111+02:00","Waarde":4.037140241449977,"Eenheid":1,"Locatie":{"Naam":"Sint-Niklaas","Beschrijving":"Derde grootste stad van Oost-Vlaanderen","GekendVoor":"Marktplein"}}
+{"MomentMeting":"2025-05-25T14:03:51.924929+02:00","Waarde":5.581112935228045,"Eenheid":2,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9262091+02:00","Waarde":51.13979900720391,"Eenheid":0,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9270531+02:00","Waarde":1047.612989447793,"Eenheid":3,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9276929+02:00","Waarde":12.768433122654919,"Eenheid":2,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9283483+02:00","Waarde":1038.0607205202868,"Eenheid":3,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-25T14:03:51.9309477+02:00","Waarde":-1.7788300822660261,"Eenheid":2,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9316503+02:00","Waarde":3.153898356518866,"Eenheid":2,"Locatie":{"Naam":"Aalst","Beschrijving":"Tweede grootste stad van Oost-Vlaanderen","GekendVoor":"Carnaval"}}
+{"MomentMeting":"2025-05-25T14:03:51.9325909+02:00","Waarde":1009.1736072677421,"Eenheid":3,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}
+{"MomentMeting":"2025-05-25T14:03:51.93352+02:00","Waarde":45.277503167446525,"Eenheid":0,"Locatie":{"Naam":"Gent","Beschrijving":"Grootste stad van Oost-Vlaanderen","GekendVoor":"Studenten"}}

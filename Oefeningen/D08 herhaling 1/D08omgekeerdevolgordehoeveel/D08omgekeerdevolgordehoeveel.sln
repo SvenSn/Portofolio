@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D08omgekeerdevolgordehoeveel", "D08omgekeerdevolgordehoeveel\D08omgekeerdevolgordehoeveel.csproj", "{BA46A180-45F8-46FB-B59A-08CC9C0DE4AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA46A180-45F8-46FB-B59A-08CC9C0DE4AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA46A180-45F8-46FB-B59A-08CC9C0DE4AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA46A180-45F8-46FB-B59A-08CC9C0DE4AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA46A180-45F8-46FB-B59A-08CC9C0DE4AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F09B2390-F02B-4A7F-B0F3-4DD71B3EABCF}
+	EndGlobalSection
+EndGlobal

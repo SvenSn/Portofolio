@@ -1,0 +1,186 @@
+= Programmeren Gevorderd: Eindevaluatie
+:hide-uri-scheme:
+:icons: font
+:source-highlighter: pygments
+:source-language: c#
+:source-linenums-option:
+:toc: left
+:toc-title: Inhoudstafel
+:imagesdir: ./Images/
+:sectnums: 
+:pdf-page-size: A4 
+
+== Opdrachten
+De eindevaluatie bestaat uit volgende opdracht:
+
+* **Straatnamen**: 
+** Een opdracht op collecties en LINQ.
+
+== Deadlines
+
+* Deadline: #23 mei 2025 om 23:59# 
+* Mondelinge verdediging: in de week van 26 mei 2025
+
+IMPORTANT: #Wie de opdrachten niet indient voor de deadline wordt niet uitgenodigd voor de mondelinge verdediging.# De tijdsindeling voor mondelinge verdediging wordt kort na de deadline bekendgemaakt.
+
+TIP: Dien gerust meerdere keren in op Chamilo, enkel de laatste versie wordt bekeken en verbeterd maar zo ben je wel bestand tegen calamiteiten op de dag van de deadline.
+
+=== Indienen
+
+Bij het indienen wordt verwacht: #één zip file#, met daarin:
+
+* Een folder: `Straatnamen`.
+** daarin o.a. de volledige solution en dit zonder de subfolders `bin` en `obj`.
+
+== BELANGRIJK
+Tijdens de mondelinge verdediging ga je je eigen code uit de opdracht toelichten.
+
+IMPORTANT: #De opdracht draagt bij tot je ervaring met het collection framework en de LINQ bibliotheek. Tijdens de evaluatie dien je ook zelfstandig een oefening te maken hierop.#
+
+<<<<
+
+== Opdracht Straatnamen
+=== Gegeven
+Download “StraatnamenInfo.zip” van Chamilo, dit is een zipbestand met daarin de volgende tekstbestanden:
+
+* Straatnamen.csv
+* Gemeentenaam.csv
+* StraatnaamID_gemeenteID.csv
+* ProvincieInfo.csv
+* ProvincieIDsVlaanderen.csv
+
+==== Straatnamen.csv
+Dit bestand bevat een lijst met straatnamen in Vlaanderen, Brussel en een deel van Wallonië en een unieke id.
+
+ EXN;LOS
+ -9;NULL
+ 1;Acacialaan                                                                                                                      
+ 2;Adriaan Sanderslei                                                                                                              
+ 3;Ahornelaan                                                                                                                      
+ 4;Antoon van Brabantstraat                                                                                                        
+ 5;Antwerpsesteenweg                                                                                                               
+ 6;Arkel                                                                                                                           
+ 7;August Vermeylenlaan                                                                                                            
+ 8;Azalealaan                                                                                                                      
+ 9;Baron van Ertbornstraat  
+
+==== Gemeentenaam.csv
+Dit bestand bevat de gemeentenamen en een gemeenteId. *Het veld gemeenteNaamId gebruiken we niet.*
+
+IMPORTANT: Het veld `taalCodeGemeenteNaam` gebruiken we om te filteren want we gaan enkel de Nederlandse naam gebruiken (code : nl).
+
+ gemeenteNaamId;gemeenteId;taalCodeGemeenteNaam;gemeenteNaam
+ 1;1;nl;Aartselaar
+ 2;2;nl;Antwerpen
+ 3;2;fr;Anvers
+ 4;2;de;Antwerpen
+ 5;3;nl;Boechout
+ 6;4;nl;Boom
+ 7;5;nl;Borsbeek
+
+
+==== StraatnaamID_gemeenteID.csv
+In dit bestand is de link gelegd tussen de straatnaamId en de gemeenteId.
+
+TIP: Om uit te zoeken tot welke gemeente een straatnaam behoort kan je deze lijst gebruiken.
+
+ straatNaamId;gemeenteId
+ 1;1
+ 2;1
+ 3;1
+ 4;1
+ 5;1
+ 6;1
+ 7;1
+
+==== ProvincieInfo.csv
+Informatie over de provincie waartoe een gemeente behoort is in dit bestand opgeslagen. Je vindt er voor elke gemeente (gemeenteId) tot welke provincie deze behoort (provincieId en ProvincieNaam). Ook hier gaan we enkel de Nederlandse namen van de provincies gebruiken, dus filteren op code ‘nl’.
+
+ gemeenteId;provincieId;taalCodeProvincieNaam;provincieNaam
+ 1;1;nl;Antwerpen
+ 1;1;fr;Anvers
+ 2;1;nl;Antwerpen
+ 2;1;fr;Anvers
+ 3;1;nl;Antwerpen
+ 3;1;fr;Anvers
+ 4;1;nl;Antwerpen
+ 4;1;fr;Anvers
+ 5;1;nl;Antwerpen
+
+
+==== ProvincieIDsVlaanderen.csv
+De provincies die we verwerken kan je terugvinden in dit bestand, het bevat een lijstje met de provincieIds.
+
+ 1,2,4,5,8
+
+=== Overzicht
+
+image::Overzicht.png[align = "center"]
+
+=== Opgave
+
+NOTE: Dit is een oefening op LINQ, een 3-lagen applicatie is niet perse nodig.
+
+Schrijf een methode die als parameters meekrijgt:
+
+* De locatie van de bronbestanden.
+* De naam van een subfolder waar de resultaten worden weggeschreven. Deze subfolder komt naast de bronbestanden te staan.
+
+Verwachte functionaliteit:
+
+. Het programma moet de data uit de bronbestanden verwerken en de volgende uitvoer bekomen:
+.. Voor elke provincie wordt een folder aangemaakt met daarin subfolders voor elke gemeente. 
+.. In de folders voor elke gemeente staat een tekstbestand (`Straten_in_xxxx.txt`) met de straatnamen van de gemeente in alfabetische volgorde.
+
+image::ProvincieSubfolder.png[align = "center"]
+
+image::Provincies.png[align = "center"]
+
+image::Gemeenten.png[align = "center"]
+
+image::StratenPerGemeente.png[align = "center"]
+
+
+ 't Klein Eeckhout
+ 't Maegelijnplein
+ 't Spieken
+ 't Vestjen
+ 1 Meistraat
+ Aartstraat
+ Abbeelstraat
+ Abdijstraat
+ Abrahamsweg
+ Acaciastraat
+ Achterbremt
+ Achtermaal
+ Achterstraat
+ Achterweg
+ Achtzaligheden
+ Affligemdreef
+ Afspanningsstraat
+ Ajuinenstraat
+
+=== Stappenplan
+==== Stap 1
+Defineer klassen voor: `Straatnaam`, `Gemeente`, `StraatnaamIdToGemeenteId` en `GemeenteProvincieInfo`.
+
+Lees de bronbestanden in en verwerk de data naar objecten die je bijhoudt in collecties. 
+
+NOTE: Vergeet niet rekening te houden met de te verwerken provincie ids.
+
+==== Stap 2 (Dit is de moeilijkste stap)
+Het is de bedoeling om na het inlezen van de bronbestanden een datastructuur op te stellen die voor ons de nodige info beschikbaar maakt.
+
+Denk eerst even na over deze datastructuur:
+
+* Gemeenten horen toe aan provincies: hoe kan je gemeenten linken aan een provincie in een collectie.
+* Straatnamen horen toe aan gemeenten: hoe kan je straatnamen linken aan een gemeente in een collectie.
+* Hoe kom je nu tot een globale collectie die provincies linkt aan gemeenten en die gemeenten linkt aan straatnamen.
+
+==== Stap 3
+Uiteindelijk kom je tot een globale collectie die straatnamen linkt aan gemeenten en die gemeenten linkt aan provincies. Door deze collectie te overlopen kan de gevraagde folderstructuur en tekstbestanden eenvoudig aangemaakt worden.
+
+=== Te gebruiken technologieën
+* Visual Studio Enterprise
+* C#
+* .NET 9.0

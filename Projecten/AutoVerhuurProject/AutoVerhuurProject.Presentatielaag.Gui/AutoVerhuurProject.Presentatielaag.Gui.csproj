@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\KeuzeImage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoVerhuurProject.Domein\AutoVerhuurProject.Domein.csproj" />
+    <ProjectReference Include="..\AutoVerhuurProject.Persistentielaag.Database\AutoVerhuurProject.Persistentielaag.Database.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\KeuzeImage.png" />
+  </ItemGroup>
+
+</Project>

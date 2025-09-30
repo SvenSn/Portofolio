@@ -1,0 +1,52 @@
+﻿<Page x:Class="CadeaubonProject.Presentatielaag.Gui.Pages.BestellingenPagina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CadeaubonProject.Presentatielaag.Gui.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BestellingenPagina">
+    <Page.Background>
+        <ImageBrush  ImageSource="/images/BestellingenGedaanImage3.png"/>
+    </Page.Background>
+
+    <Grid>
+        <Button Content="Terug" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top" Command="NavigationCommands.BrowseBack"/>
+
+        <ListView x:Name="BestellingenLijstView"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1" SelectionChanged="BestellingenLijstView_SelectionChanged" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Voornaam" Width="auto" DisplayMemberBinding="{Binding klantDTO.Voornaam}"/>
+                    <GridViewColumn Header="Achternaam"  Width="auto" DisplayMemberBinding="{Binding klantDTO.Achternaam}"/>
+                    <GridViewColumn Header="CadeaubonID" Width="auto" DisplayMemberBinding="{Binding cadeaubonDTO.Id}"/>
+                    <GridViewColumn Header="Geldig tot" Width="auto" DisplayMemberBinding="{Binding cadeaubonDTO.Datum}"/>
+                    <GridViewColumn Header="Saldo" Width="auto" DisplayMemberBinding="{Binding cadeaubonDTO.Saldo}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="CadeaubonGebruikList" Grid.Row="1" Grid.Column="2" Margin="30,0,5,0" 
+          SelectionMode="Single" 
+          Focusable="False"
+          BorderThickness="0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Winkel Naam" DisplayMemberBinding="{Binding WinkelNaam}" />
+                    <GridViewColumn Header="Datum" DisplayMemberBinding="{Binding Datum}" />
+                    <GridViewColumn Header="Saldo Gebruikt" DisplayMemberBinding="{Binding Waarde}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2.6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="3.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Page>

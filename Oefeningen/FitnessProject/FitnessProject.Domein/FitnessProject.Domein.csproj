@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessProject.Persitentielaag\FitnessProject.Persitentielaag.csproj" />
+    <ProjectReference Include="..\FitnessProject.Presentatielaag\FitnessProject.Presentatielaag.csproj" />
+    <ProjectReference Include="..\FitnessProject.StartUp\FitnessProject.StartUp.csproj" />
+  </ItemGroup>
+
+</Project>

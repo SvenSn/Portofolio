@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D04_weermetrobuusteinvoer", "D04_weermetrobuusteinvoer\D04_weermetrobuusteinvoer.csproj", "{049480E1-8CCD-4EFB-AFE0-50BBCD6F171F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{049480E1-8CCD-4EFB-AFE0-50BBCD6F171F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049480E1-8CCD-4EFB-AFE0-50BBCD6F171F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049480E1-8CCD-4EFB-AFE0-50BBCD6F171F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049480E1-8CCD-4EFB-AFE0-50BBCD6F171F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C46E2BB-0E72-4A95-85A4-C3AF4C91543A}
+	EndGlobalSection
+EndGlobal

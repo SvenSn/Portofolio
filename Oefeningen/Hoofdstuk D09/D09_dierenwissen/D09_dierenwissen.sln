@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D09_dierenwissen", "D09_dierenwissen\D09_dierenwissen.csproj", "{605B36B2-FF27-4DB2-8E6A-63EB61A1BE5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605B36B2-FF27-4DB2-8E6A-63EB61A1BE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605B36B2-FF27-4DB2-8E6A-63EB61A1BE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605B36B2-FF27-4DB2-8E6A-63EB61A1BE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605B36B2-FF27-4DB2-8E6A-63EB61A1BE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAC15562-D906-4873-ADBB-2F67567D1E1E}
+	EndGlobalSection
+EndGlobal

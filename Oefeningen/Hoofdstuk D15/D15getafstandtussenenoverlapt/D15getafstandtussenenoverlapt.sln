@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D15getafstandtussenenoverlapt", "D15getafstandtussenenoverlapt\D15getafstandtussenenoverlapt.csproj", "{54247280-82BC-44B1-AD80-21C0A2A86133}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54247280-82BC-44B1-AD80-21C0A2A86133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54247280-82BC-44B1-AD80-21C0A2A86133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54247280-82BC-44B1-AD80-21C0A2A86133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54247280-82BC-44B1-AD80-21C0A2A86133}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {081B4660-25CF-4AD2-8307-97C07C0D0758}
+	EndGlobalSection
+EndGlobal

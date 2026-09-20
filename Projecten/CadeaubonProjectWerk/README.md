@@ -1,72 +1,43 @@
 # CadeaubonProject
 
-Een WPF-applicatie voor het aankopen en beheren van cadeaubonnen, ontwikkeld in het kader van het vak **Project 1** aan **HoGent**. De app laat toe om verschillende cadeaubonwaarden te selecteren, een thema te kiezen en een bestelling te plaatsen met doorgang naar betaling.
+Een WPF-applicatie in .NET 9 voor het aankopen, beheren en verzilveren van cadeaubonnen. Het project is opgebouwd uit domein-, persistentie-, test- en presentatielagen.
 
+## Functionaliteit
 
-## 💻 Getting Started
-### ✅ Vereisten
+- Klanten registreren en aanmelden.
+- Een vast of vrij cadeaubonbedrag kiezen.
+- Een thema selecteren, zoals verjaardag of kerst.
+- Bestellingen samenstellen en de betaalflow openen.
+- Bestellingen en cadeaubonnen via een accountpagina beheren.
+- Cadeaubonnen verzilveren.
 
-- Visual Studio 2022 of recenter
-- .NET 9 SDK
-- SQL Server Express (optioneel lokaal)
-- Online SQL Server toegang (zie hieronder)
-- Stripe API key (indien betaling geïntegreerd is)
+## Technologie en structuur
 
-### 📦 Installatie
+- WPF en XAML voor de desktopinterface.
+- SQL Server en repository-implementaties voor opslag.
+- Managers, DTO's en factories in de domeinlaag.
+- Stripe-integratie voor betalingen.
+- Unit tests voor klanten, bestellingen en cadeaubonnen.
 
-1. Clone of download deze repository.
-2. Open `CadeaubonProject.sln` in Visual Studio.
-3. Herstel de NuGet-packages via **Build > Restore NuGet Packages**.
-4. Stel het project in als **StartUp Project**: `Presentatielaag.Gui`.
-5. Druk op **F5** om de app te starten.
+## Lokale configuratie
 
+Vereist Visual Studio 2022 of recenter, de .NET 9 SDK en een SQL Server-database. De databaseverbinding staat bewust niet in Git. Stel ze lokaal in voordat je de app start:
 
-## 🌐 Database
-
-Deze applicatie gebruikt een **online SQL Server database**, met een hardcoded connection string in `App.xaml.cs`.
-
-**Voorbeeld van de connectiestring**:
-
-```csharp
-Data Source=cigrit.fortiddns.com,11433;
-Initial Catalog=Boomers25;
-Persist Security Info=True;
-User ID=Boomers25User;
-Password=REDACTED;
-Trust Server Certificate=True;
+```powershell
+$env:CADEAUBON_DB_CONNECTION_STRING = "Server=...;Database=...;User Id=...;Password=...;TrustServerCertificate=True"
 ```
 
-## 🚀 Functionaliteiten
+Plaats Stripe-sleutels evenmin in broncode. Gebruik voor lokale ontwikkeling user secrets of environmentvariabelen en vul geen echte waarden in een te committen `appsettings.json` in.
 
-- Selectie uit vaste bedragen (5€, 20€, 50€) of een zelfgekozen bedrag.
-- Keuze van een cadeaubonthema zoals `Verjaardag`, `Kerst`, enz.
-- Bestellingen worden aangemaakt en doorgestuurd naar een betaalpagina.
-- Mogelijkheid tot integratie met Stripe voor online betaling.
-- Overzicht van bestellingen beschikbaar via accountpagina.
+## Bouwen en testen
 
-## 🔧 Build & Run
+```powershell
+dotnet build .\CadeaubonProject\CadeaubonProject.sln
+dotnet test .\CadeaubonProject\CadeaubonProject.Domein.Tests\CadeaubonProject.Domein.Tests.csproj
+```
 
-1. Klik in Visual Studio op **Build > Build Solution**.
-2. Start de app via **F5** of **Debug > Start Debugging**.
-3. Zorg dat je internettoegang hebt voor de online database en eventueel Stripe.
+Stel `CadeaubonProjectWerk.Presentatielaag.Gui` in als opstartproject om de WPF-app via Visual Studio te starten.
 
+## Beveiliging
 
-## 🧪 Testen
-
-Unit tests zijn opgenomen in het project `CadeaubonProject.Domein.Tests`.
-
-Om de tests uit te voeren:
-1. Open de **Test Explorer** in Visual Studio (menu **Test > Test Explorer**).
-2. Klik op **Run All** of voer individuele tests uit.
-
-Geteste componenten:
-- Bestellingen
-- Cadeaubonnen
-- Klanten
-
-Testframework: vermoedelijk xUnit of MSTest.
-
-## 👥 Contributors
-
-- Astrid Staessens  
-- Sven Snoeck
+Een eerder gecommitteerd databasewachtwoord moet worden ingetrokken en vervangen. Alleen het verwijderen uit de huidige bestanden haalt een geheim niet uit de Git-geschiedenis.

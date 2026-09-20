@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:loc="clr-namespace:BudgetApp.App.Localization"
+ xmlns:vm="clr-namespace:BudgetApp.App.ViewModels"
+ x:Class="BudgetApp.App.Views.SettingsPage" x:DataType="vm:SettingsViewModel"
+ Shell.NavBarIsVisible="False" Title="{loc:Translate Text041}">
+ <ScrollView>
+<Grid Style="{StaticResource ScreenLayoutStyle}">
+ <VerticalStackLayout MaximumWidthRequest="640" HorizontalOptions="Fill" Spacing="24">
+ <Label Text="{Binding PreferencesTitle}" Style="{StaticResource Headline}" />
+ <Label Text="{Binding PreferencesDescription}" Style="{StaticResource FormDescriptionStyle}" />
+ <Label Text="{Binding AppearanceTitle}" Style="{StaticResource SubHeadline}" />
+ <Label Text="{Binding ThemeLabel}" Style="{StaticResource FormFieldLabelStyle}" />
+ <Picker ItemsSource="{Binding Themes}" SelectedItem="{Binding SelectedTheme}" MinimumHeightRequest="48" />
+ <Label Text="{Binding LanguageLabel}" Style="{StaticResource FormFieldLabelStyle}" />
+ <Picker ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" MinimumHeightRequest="48" />
+ <Label Text="{Binding CurrencyLabel}" Style="{StaticResource FormFieldLabelStyle}" />
+ <Picker ItemsSource="{Binding Currencies}" SelectedItem="{Binding SelectedCurrency}" MinimumHeightRequest="48" />
+ <Label Text="{Binding FormatDescription}" Style="{StaticResource FormDescriptionStyle}" />
+ </VerticalStackLayout>
+</Grid>
+</ScrollView>
+</ContentPage>

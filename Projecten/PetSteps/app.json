@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "PetSteps",
+    "slug": "PetSteps",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "We gebruiken je stappen om je huisdier te laten groeien."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACTIVITY_RECOGNITION",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.complexsven.PetSteps"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-maps",
+      "expo-sensors",
+      [
+        "expo-background-fetch",
+        {
+          "startOnBoot": false
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8cc0ee3b-9d61-4e27-99b6-37cfbbd468cd"
+      }
+    }
+  }
+}

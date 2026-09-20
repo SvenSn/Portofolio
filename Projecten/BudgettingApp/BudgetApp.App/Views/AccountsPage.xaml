@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BudgetApp.App.ViewModels"
+             xmlns:entities="clr-namespace:BudgetApp.Domain.Entities;assembly=BudgetApp.Domain"
+             xmlns:loc="clr-namespace:BudgetApp.App.Localization"
+             x:Class="BudgetApp.App.Views.AccountsPage"
+             x:DataType="vm:AccountsViewModel" Title="{loc:Translate AccountsTitle}">
+    <Grid Style="{StaticResource ScreenLayoutStyle}">
+        <Grid MaximumWidthRequest="760" HorizontalOptions="Fill"
+              RowDefinitions="Auto,Auto,Auto,*,Auto" RowSpacing="20">
+            <VerticalStackLayout Spacing="8">
+                <Label Text="{loc:Translate AccountsTitle}" Style="{StaticResource Headline}" />
+                <Label Text="{loc:Translate AccountsDescription}" Style="{StaticResource FormDescriptionStyle}" />
+            </VerticalStackLayout>
+            <Button Grid.Row="1" Text="{loc:Translate Text019}" Command="{Binding AddCommand}" IsEnabled="{Binding IsReady}" />
+            <VerticalStackLayout Grid.Row="2">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+                <Label Text="{Binding Message}" />
+            </VerticalStackLayout>
+            <CollectionView Grid.Row="3" ItemsSource="{Binding Items}" SelectedItem="{Binding Selected}"
+                            SelectionMode="Single" IsEnabled="{Binding IsReady}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="entities:Account">
+                        <VerticalStackLayout Padding="12,16" Spacing="8">
+                            <Label Text="{Binding Name}" FontSize="20" FontAttributes="Bold" />
+                            <Label Text="{Binding Type, Converter={StaticResource EnumTextConverter}}"
+                                   Style="{StaticResource FormDescriptionStyle}" />
+                            <Label Text="{Binding Balance, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Money}"
+                                   FontSize="24" FontAttributes="Bold" />
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <VerticalStackLayout Grid.Row="4" IsEnabled="{Binding IsReady}" Spacing="8">
+                <Button Text="{loc:Translate ActivateAccount}" Command="{Binding ActivateCommand}" />
+                <Button Text="{loc:Translate DeleteAccount}" Command="{Binding DeleteCommand}" Style="{StaticResource DeleteActionStyle}" />
+                <Button Text="{loc:Translate Text010}" Command="{Binding LoadCommand}" Style="{StaticResource QuietActionStyle}" />
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

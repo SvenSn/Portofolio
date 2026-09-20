@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Shell
+    x:Class="BudgetApp.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:loc="clr-namespace:BudgetApp.App.Localization"
+    xmlns:views="clr-namespace:BudgetApp.App.Views"
+    Title="{loc:Translate Text140}"
+    Shell.NavBarIsVisible="False"
+    FlyoutBehavior="{OnPlatform WinUI=Locked, Android=Disabled, Default=Disabled}">
+
+    <Shell.Resources>
+        <FontImageSource x:Key="DashboardIcon" FontFamily="FontAwesomeSolid" Glyph="&#xF015;" Size="24" />
+        <FontImageSource x:Key="TransactionsIcon" FontFamily="FontAwesomeSolid" Glyph="&#xF362;" Size="24" />
+        <FontImageSource x:Key="BudgetIcon" FontFamily="FontAwesomeSolid" Glyph="&#xF555;" Size="24" />
+        <FontImageSource x:Key="SavingsIcon" FontFamily="FontAwesomeSolid" Glyph="&#xF4D3;" Size="24" />
+        <FontImageSource x:Key="MoreIcon" FontFamily="FontAwesomeSolid" Glyph="&#xF141;" Size="24" />
+    </Shell.Resources>
+
+    <TabBar
+        IsVisible="{OnPlatform Android=True, WinUI=False, Default=False}">
+
+        <ShellContent
+            Title="{loc:Translate Text027}"
+            Route="DashboardMobile"
+            Icon="{StaticResource DashboardIcon}"
+            ContentTemplate="{DataTemplate views:DashboardPage}" />
+
+        <ShellContent
+            Title="{loc:Translate Text141}"
+            Route="TransactionsMobile"
+            Icon="{StaticResource TransactionsIcon}"
+            ContentTemplate="{DataTemplate views:TransactionPage}" />
+
+        <ShellContent
+            Title="{loc:Translate Text142}"
+            Route="BudgetMobile"
+            Icon="{StaticResource BudgetIcon}"
+            ContentTemplate="{DataTemplate views:BudgetsPage}" />
+
+        <ShellContent
+            Title="{loc:Translate Text143}"
+            Route="SavingsMobile"
+            Icon="{StaticResource SavingsIcon}"
+            ContentTemplate="{DataTemplate views:SavingsPage}" />
+
+        <Tab Title="{loc:Translate Text144}" Route="MoreMobile" Icon="{StaticResource MoreIcon}">
+        <ShellContent Title="{loc:Translate AccountsTitle}" Route="AccountsMobile"
+                      ContentTemplate="{DataTemplate views:AccountsPage}" />
+        <ShellContent
+            Title="{loc:Translate Text046}"
+            Route="IncomeMobile"
+            ContentTemplate="{DataTemplate views:IncomePage}" />
+        <ShellContent
+            Title="{loc:Translate Text145}"
+            Route="HistoryMobile"
+            ContentTemplate="{DataTemplate views:HistoryPage}" />
+
+        <ShellContent
+            Title="{loc:Translate Text041}"
+            Route="SettingsMobile"
+            ContentTemplate="{DataTemplate views:SettingsPage}" />
+        </Tab>
+
+    </TabBar>
+
+    <FlyoutItem
+        Title="{loc:Translate Text027}"
+        Route="DashboardDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:DashboardPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text141}"
+        Route="TransactionsDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:TransactionPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="{loc:Translate AccountsTitle}" Route="AccountsDesktop"
+                IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent ContentTemplate="{DataTemplate views:AccountsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text046}"
+        Route="IncomeDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent ContentTemplate="{DataTemplate views:IncomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text142}"
+        Route="BudgetDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:BudgetsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text143}"
+        Route="SavingsDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:SavingsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text146}"
+        Route="SavingsGoalsDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:SavingsGoalPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text145}"
+        Route="HistoryDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:HistoryPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="{loc:Translate Text041}"
+        Route="SettingsDesktop"
+        IsVisible="{OnPlatform WinUI=True, Android=False, Default=False}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:SettingsPage}" />
+    </FlyoutItem>
+
+</Shell>

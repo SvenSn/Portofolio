@@ -1,0 +1,6 @@
+@PartyFinder.Api_HostAddress = http://localhost:5222
+
+GET {{PartyFinder.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<Application
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:localization="clr-namespace:BudgetApp.App.Localization"
+    x:Class="BudgetApp.App.App">
+
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <localization:EnumTextConverter x:Key="EnumTextConverter" />
+            <localization:LocalizedValueConverter x:Key="LocalizedValueConverter" />
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- PRIMARY BUTTON -->
+            <Style
+                x:Key="PrimaryNavigationButtonStyle"
+                TargetType="Button">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource PrimaryLight},
+                        Dark={StaticResource PrimaryDark}}" />
+
+                <Setter
+                    Property="TextColor"
+                    Value="White" />
+
+                <Setter
+                    Property="FontSize"
+                    Value="16" />
+
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+
+                <Setter
+                    Property="CornerRadius"
+                    Value="14" />
+
+                <Setter
+                    Property="HeightRequest"
+                    Value="52" />
+
+                <Setter
+                    Property="Padding"
+                    Value="18,12" />
+
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Fill" />
+
+            </Style>
+
+            <!-- SECONDARY BUTTON -->
+            <Style
+                x:Key="SecondaryNavigationButtonStyle"
+                TargetType="Button">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource SurfaceLight},
+                        Dark={StaticResource SurfaceDark}}" />
+
+                <Setter
+                    Property="TextColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource PrimaryTextLight},
+                        Dark={StaticResource PrimaryTextDark}}" />
+
+                <Setter
+                    Property="BorderColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource BorderLight},
+                        Dark={StaticResource BorderDark}}" />
+
+                <Setter
+                    Property="BorderWidth"
+                    Value="1" />
+
+                <Setter
+                    Property="FontSize"
+                    Value="16" />
+
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+
+                <Setter
+                    Property="CornerRadius"
+                    Value="14" />
+
+                <Setter
+                    Property="HeightRequest"
+                    Value="52" />
+
+                <Setter
+                    Property="Padding"
+                    Value="18,12" />
+
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Fill" />
+
+            </Style>
+
+            <!-- CARDS -->
+            <Style
+                x:Key="DashboardCardStyle"
+                TargetType="Border">
+
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource SurfaceLight},
+                        Dark={StaticResource SurfaceDark}}" />
+
+                <Setter
+                    Property="Stroke"
+                    Value="{AppThemeBinding
+                        Light={StaticResource BorderLight},
+                        Dark={StaticResource BorderDark}}" />
+
+                <Setter Property="StrokeThickness" Value="1" />
+
+                <Setter Property="Padding" Value="20" />
+
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <RoundRectangle CornerRadius="18" />
+                    </Setter.Value>
+                </Setter>
+
+                <Setter Property="Shadow">
+                    <Setter.Value>
+                        <Shadow
+                            Opacity="0.08"
+                            Radius="14"
+                            Offset="0,4" />
+                    </Setter.Value>
+                </Setter>
+
+            </Style>
+
+            <Style
+                x:Key="DashboardStatLabelStyle"
+                TargetType="Label">
+
+                <Setter Property="FontSize" Value="12" />
+
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+
+                <Setter
+                    Property="TextColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource SecondaryTextLight},
+                        Dark={StaticResource SecondaryTextDark}}" />
+
+            </Style>
+
+            <Style
+                x:Key="DashboardStatValueStyle"
+                TargetType="Label">
+
+                <Setter Property="FontSize" Value="22" />
+
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+
+                <Setter
+                    Property="TextColor"
+                    Value="{AppThemeBinding
+                        Light={StaticResource PrimaryTextLight},
+                        Dark={StaticResource PrimaryTextDark}}" />
+
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+
+</Application>

@@ -1,4 +1,4 @@
-using CadeaubonProject.Domein.Interfaces;
+﻿using CadeaubonProject.Domein.Interfaces;
 using CadeaubonProject.Domein.Managers;
 using CadeaubonProject.PersistentieLaag.Databank;
 using CadeaubonProject.Domein;
@@ -15,10 +15,14 @@ public partial class App : Application
 {
     private void Application_Startup(object sender, StartupEventArgs e)
     {
+        string connectionString = Environment.GetEnvironmentVariable("CADEAUBON_DB_CONNECTION_STRING")
+            ?? throw new InvalidOperationException(
+                "Stel CADEAUBON_DB_CONNECTION_STRING in voordat je de applicatie start.");
+
         //repositories aanmaken
-        IKlantRepository klantRepo = new KlantRepositoryDB(@"Data Source=cigrit.fortiddns.com,11433;Initial Catalog=Boomers25;Persist Security Info=True;User ID=Boomers25User;Password=REDACTED;Trust Server Certificate=True");
-        IBestellingRepository bestellingRepo = new BestellingRepositoryDB(@"Data Source=cigrit.fortiddns.com,11433;Initial Catalog=Boomers25;Persist Security Info=True;User ID=Boomers25User;Password=REDACTED;Trust Server Certificate=True");
-        ICadeaubonRepository cadeaubonRepo = new CadeaubonRepositoryDB(@"Data Source=cigrit.fortiddns.com,11433;Initial Catalog=Boomers25;Persist Security Info=True;User ID=Boomers25User;Password=REDACTED;Trust Server Certificate=True");
+        IKlantRepository klantRepo = new KlantRepositoryDB(connectionString);
+        IBestellingRepository bestellingRepo = new BestellingRepositoryDB(connectionString);
+        ICadeaubonRepository cadeaubonRepo = new CadeaubonRepositoryDB(connectionString);
 
 
         //managers aanmaken 

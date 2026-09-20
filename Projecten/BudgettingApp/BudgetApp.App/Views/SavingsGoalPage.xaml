@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:loc="clr-namespace:BudgetApp.App.Localization"
+ xmlns:vm="clr-namespace:BudgetApp.App.ViewModels"
+ xmlns:entities="clr-namespace:BudgetApp.Domain.Entities;assembly=BudgetApp.Domain"
+ x:Class="BudgetApp.App.Views.SavingsGoalPage" x:DataType="vm:SavingsGoalViewModel" Title="{loc:Translate Text062}">
+ <ScrollView>
+<Grid Style="{StaticResource ScreenLayoutStyle}">
+<VerticalStackLayout MaximumWidthRequest="760" HorizontalOptions="Fill" Spacing="20">
+ <Label Text="{loc:Translate Text062}" Style="{StaticResource Headline}" />
+ <Label Text="{loc:Translate Text063}" Style="{StaticResource FormDescriptionStyle}" />
+ <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+ <Label Text="{Binding Message}" />
+ <VerticalStackLayout Spacing="16" IsEnabled="{Binding IsReady}">
+<Label Text="{loc:Translate AccountGoalsDescription}" Style="{StaticResource FormDescriptionStyle}" />
+<VerticalStackLayout IsVisible="{Binding HasUnassignedGoals}" Spacing="12">
+    <Label Text="{loc:Translate UnassignedGoalsTitle}" Style="{StaticResource SubHeadline}" />
+    <Label Text="{loc:Translate UnassignedGoalsDescription}" Style="{StaticResource FormDescriptionStyle}" />
+    <Picker ItemsSource="{Binding UnassignedGoals}" SelectedItem="{Binding SelectedUnassignedGoal}"
+            ItemDisplayBinding="{Binding Name}" MinimumHeightRequest="48" />
+    <Button Text="{loc:Translate AssignGoal}" Command="{Binding AssignCommand}" />
+</VerticalStackLayout>
+<Label Text="{loc:Translate Text064}" Style="{StaticResource FormFieldLabelStyle}" />
+<Entry Text="{Binding Name}" Keyboard="Default" MinimumHeightRequest="48" />
+<Label Text="{loc:Translate Text065}" Style="{StaticResource FormFieldLabelStyle}" />
+<Entry Text="{Binding Target}" Keyboard="Numeric" MinimumHeightRequest="48" />
+<Label Text="{loc:Translate Text066}" Style="{StaticResource FormFieldLabelStyle}" />
+<Entry Text="{Binding Initial}" IsEnabled="{Binding IsCreating}" Keyboard="Numeric" MinimumHeightRequest="48" />
+<Label Text="{loc:Translate Text067}" Style="{StaticResource FormFieldLabelStyle}" />
+<DatePicker Date="{Binding TargetDate}"  Format="d" />
+<Button Text="{Binding SaveLabel}" Command="{Binding SaveCommand}" MinimumHeightRequest="48" />
+<Button Text="{loc:Translate Text068}" Command="{Binding CancelCommand}" Style="{StaticResource QuietActionStyle}" />
+<CollectionView ItemsSource="{Binding Items}" SelectionMode="Single" SelectedItem="{Binding Selected}" HeightRequest="320">
+<CollectionView.EmptyView>
+<Label Text="{loc:Translate Text016}" />
+</CollectionView.EmptyView>
+<CollectionView.ItemTemplate>
+<DataTemplate x:DataType="entities:SavingsGoal">
+<VerticalStackLayout Padding="12,16" Spacing="8">
+<Label Text="{Binding Name}" />
+<Label Text="{Binding CurrentAmount, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Text073}" />
+<Label Text="{Binding TargetAmount, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Text074}" />
+<Label Text="{Binding TargetDate, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Date}" />
+<Label Text="{Binding IsCompleted, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Text075}" />
+</VerticalStackLayout>
+</DataTemplate>
+</CollectionView.ItemTemplate>
+</CollectionView>
+<Button Text="{loc:Translate Text069}" Command="{Binding EditCommand}" MinimumHeightRequest="48" />
+<Label Text="{loc:Translate Text070}" Style="{StaticResource FormFieldLabelStyle}" />
+<Entry Text="{Binding Contribution}" Keyboard="Numeric" MinimumHeightRequest="48" />
+<Button Text="{loc:Translate Text071}" Command="{Binding ContributeCommand}" MinimumHeightRequest="48" />
+<Button Text="{loc:Translate Text072}" Command="{Binding DeleteCommand}" Style="{StaticResource DeleteActionStyle}" />
+</VerticalStackLayout>
+ <Button Text="{loc:Translate Text010}" Command="{Binding LoadCommand}" Style="{StaticResource QuietActionStyle}" />
+ </VerticalStackLayout>
+</Grid>
+</ScrollView>
+</ContentPage>

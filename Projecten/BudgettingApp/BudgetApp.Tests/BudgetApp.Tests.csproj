@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BudgetApp.Domain\BudgetApp.Domain.csproj" />
+    <ProjectReference Include="..\BudgetApp.Infrastructure\BudgetApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\BudgetApp.App\Localization\L.cs" Link="App\Localization\L.cs" />
+    <Compile Include="..\BudgetApp.App\Localization\TextResources.cs" Link="Localization\TextResources.cs" />
+    <Compile Include="..\BudgetApp.App\Localization\SystemValueFormatter.cs" Link="Localization\SystemValueFormatter.cs" />
+    <Compile Include="..\BudgetApp.App\ViewModels\CreateNewAccountViewModel.cs" Link="App\ViewModels\CreateNewAccountViewModel.cs" />
+    <Compile Include="..\BudgetApp.App\ViewModels\IncomeViewModel.cs" Link="App\ViewModels\IncomeViewModel.cs" />
+    <Compile Include="..\BudgetApp.App\ViewModels\UnassignedRecord.cs" Link="App\ViewModels\UnassignedRecord.cs" />
+    <EmbeddedResource Include="..\BudgetApp.App\Resources\Strings\AppStrings.resx"
+                      LogicalName="BudgetApp.App.Resources.Strings.AppStrings.resources" />
+    <EmbeddedResource Include="..\BudgetApp.App\Resources\Strings\AppStrings.nl.resx"
+                      LogicalName="BudgetApp.App.Resources.Strings.AppStrings.nl.resources" />
+  </ItemGroup>
+
+</Project>

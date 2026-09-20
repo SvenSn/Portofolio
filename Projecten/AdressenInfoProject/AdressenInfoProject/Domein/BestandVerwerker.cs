@@ -2,7 +2,10 @@
 
 public class BestandVerwerker
 {
-    const string bestandNaam = @"C:\Users\Complex\Documents\GitHubProg\Programmeren\ProgGov\Portifolio\AdressenInfoProject\Data\adresInfo.txt";  
+    static readonly string bestandNaam = Path.Combine(
+        AppContext.BaseDirectory,
+        "Data",
+        "adresInfo.txt");
 
 
     public static List<Adres> LeesAdressenUitBestand()

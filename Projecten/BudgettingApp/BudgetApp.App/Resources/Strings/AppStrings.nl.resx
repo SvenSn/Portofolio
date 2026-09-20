@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Text001" xml:space="preserve"><value>Transactie toevoegen</value></data>
+  <data name="Text002" xml:space="preserve"><value>Boek een inkomst of uitgave op je rekening.</value></data>
+  <data name="Text003" xml:space="preserve"><value>Rekening</value></data>
+  <data name="Text004" xml:space="preserve"><value>Omschrijving</value></data>
+  <data name="Text005" xml:space="preserve"><value>Bedrag</value></data>
+  <data name="Text006" xml:space="preserve"><value>Type</value></data>
+  <data name="Text007" xml:space="preserve"><value>Categorie</value></data>
+  <data name="Text008" xml:space="preserve"><value>Datum</value></data>
+  <data name="Text009" xml:space="preserve"><value>Opslaan</value></data>
+  <data name="Text010" xml:space="preserve"><value>Vernieuwen</value></data>
+  <data name="Text011" xml:space="preserve"><value>Je budgetten</value></data>
+  <data name="Text012" xml:space="preserve"><value>Stel per maand en categorie een limiet in. Opnieuw opslaan werkt die limiet bij.</value></data>
+  <data name="Text013" xml:space="preserve"><value>Maand</value></data>
+  <data name="Text014" xml:space="preserve"><value>Limiet</value></data>
+  <data name="Text015" xml:space="preserve"><value>Budget opslaan</value></data>
+  <data name="Text016" xml:space="preserve"><value>Nog geen gegevens.</value></data>
+  <data name="Text017" xml:space="preserve"><value>Geselecteerd budget verwijderen</value></data>
+  <data name="Text018" xml:space="preserve"><value>Maand {0}</value></data>
+  <data name="Text019" xml:space="preserve"><value>Rekening aanmaken</value></data>
+  <data name="Text020" xml:space="preserve"><value>Je eerste rekening</value></data>
+  <data name="Text021" xml:space="preserve"><value>Voeg een rekening toe om je inkomsten en uitgaven bij te houden.</value></data>
+  <data name="Text022" xml:space="preserve"><value>Rekeningnaam</value></data>
+  <data name="Text023" xml:space="preserve"><value>Bijvoorbeeld: Zichtrekening</value></data>
+  <data name="Text024" xml:space="preserve"><value>Rekeningtype</value></data>
+  <data name="Text025" xml:space="preserve"><value>Beginsaldo</value></data>
+  <data name="Text026" xml:space="preserve"><value>Vul het huidige saldo van deze rekening in.</value></data>
+  <data name="Text027" xml:space="preserve"><value>Dashboard</value></data>
+  <data name="Text028" xml:space="preserve"><value>Je overzicht</value></data>
+  <data name="Text029" xml:space="preserve"><value>Je inkomsten en uitgaven, helder op een rij.</value></data>
+  <data name="Text030" xml:space="preserve"><value>Opnieuw proberen</value></data>
+  <data name="Text031" xml:space="preserve"><value>Netto deze maand</value></data>
+  <data name="Text032" xml:space="preserve"><value>Je ingestelde inkomen plus extra inkomenstransacties, min de uitgaven van deze maand. Dit is niet je rekeningsaldo.</value></data>
+  <data name="Text033" xml:space="preserve"><value>Waar gaat je inkomen naartoe?</value></data>
+  <data name="Text034" xml:space="preserve"><value>Cirkeldiagram: oranje is uitgegeven, paars is over. De bedragen staan hieronder.</value></data>
+  <data name="Text035" xml:space="preserve"><value>Oranje: uitgegeven · Paars: over</value></data>
+  <data name="Text036" xml:space="preserve"><value>Bij een tekort is de cirkel volledig oranje. Het negatieve nettobedrag staat hierboven.</value></data>
+  <data name="Text037" xml:space="preserve"><value>Inkomsten</value></data>
+  <data name="Text038" xml:space="preserve"><value>Uitgaven</value></data>
+  <data name="Text039" xml:space="preserve"><value>Nog geen inkomen of uitgaven. Leg je inkomen vast of voeg een transactie toe.</value></data>
+  <data name="Text040" xml:space="preserve"><value>+  Transactie toevoegen</value></data>
+  <data name="Text041" xml:space="preserve"><value>Instellingen</value></data>
+  <data name="Text042" xml:space="preserve"><value>Over / tekort: € {0:N2}</value></data>
+  <data name="Text043" xml:space="preserve"><value>Je historiek</value></data>
+  <data name="Text044" xml:space="preserve"><value>Bekijk de maanden waarin je gegevens hebt vastgelegd.</value></data>
+  <data name="Text045" xml:space="preserve"><value>Maand bekijken</value></data>
+  <data name="Text046" xml:space="preserve"><value>Inkomen</value></data>
+  <data name="Text047" xml:space="preserve"><value>Je inkomen</value></data>
+  <data name="Text048" xml:space="preserve"><value>Leg je inkomen vast en kies vanaf wanneer het geldt.</value></data>
+  <data name="Text049" xml:space="preserve"><value>Geldig vandaag</value></data>
+  <data name="Text050" xml:space="preserve"><value>Inkomen vastleggen</value></data>
+  <data name="Text051" xml:space="preserve"><value>Geldig vanaf</value></data>
+  <data name="Text052" xml:space="preserve"><value>Dit inkomen telt vanaf de ingangsdatum mee op je dashboard. Voer hetzelfde bedrag niet ook als inkomenstransactie in; die tellen als extra inkomsten.</value></data>
+  <data name="Text053" xml:space="preserve"><value>Inkomen opslaan</value></data>
+  <data name="Text054" xml:space="preserve"><value>Je inkomenshistoriek</value></data>
+  <data name="Text055" xml:space="preserve"><value>Nog geen inkomen vastgelegd.</value></data>
+  <data name="Text056" xml:space="preserve"><value>Vanaf {0:d}</value></data>
+  <data name="Text057" xml:space="preserve"><value>Maanddetails</value></data>
+  <data name="Text058" xml:space="preserve"><value>Ingesteld inkomen en extra inkomsten, min de uitgaven van de maand.</value></data>
+  <data name="Text059" xml:space="preserve"><value>Inkomsten: € {0:N2}</value></data>
+  <data name="Text060" xml:space="preserve"><value>Uitgaven: € {0:N2}</value></data>
+  <data name="Text061" xml:space="preserve"><value>Netto: € {0:N2}</value></data>
+  <data name="Text062" xml:space="preserve"><value>Je spaardoelen</value></data>
+  <data name="Text063" xml:space="preserve"><value>Volg je voortgang. Een bijdrage hier verplaatst geen geld tussen rekeningen.</value></data>
+  <data name="Text064" xml:space="preserve"><value>Naam</value></data>
+  <data name="Text065" xml:space="preserve"><value>Doelbedrag</value></data>
+  <data name="Text066" xml:space="preserve"><value>Al gespaard</value></data>
+  <data name="Text067" xml:space="preserve"><value>Doeldatum</value></data>
+  <data name="Text068" xml:space="preserve"><value>Nieuw doel / bewerken annuleren</value></data>
+  <data name="Text069" xml:space="preserve"><value>Geselecteerd doel bewerken</value></data>
+  <data name="Text070" xml:space="preserve"><value>Bijdrage voor geselecteerd doel</value></data>
+  <data name="Text071" xml:space="preserve"><value>Voortgang bijwerken</value></data>
+  <data name="Text072" xml:space="preserve"><value>Geselecteerd doel verwijderen</value></data>
+  <data name="Text073" xml:space="preserve"><value>Gespaard: € {0:N2}</value></data>
+  <data name="Text074" xml:space="preserve"><value>Doel: € {0:N2}</value></data>
+  <data name="Text075" xml:space="preserve"><value>Behaald: {0}</value></data>
+  <data name="Text076" xml:space="preserve"><value>Behaald</value></data>
+  <data name="Text077" xml:space="preserve"><value>Nog bezig</value></data>
+  <data name="Text078" xml:space="preserve"><value>Je spaargeld</value></data>
+  <data name="Text079" xml:space="preserve"><value>De saldi van je spaarrekeningen, overzichtelijk bij elkaar.</value></data>
+  <data name="Text080" xml:space="preserve"><value>Spaardoelen bekijken</value></data>
+  <data name="Text081" xml:space="preserve"><value>Je transacties</value></data>
+  <data name="Text082" xml:space="preserve"><value>Selecteer een transactie om ze te verwijderen.</value></data>
+  <data name="Text083" xml:space="preserve"><value>Geselecteerde transactie bewerken</value></data>
+  <data name="Text084" xml:space="preserve"><value>Geselecteerde transactie verwijderen</value></data>
+  <data name="Text085" xml:space="preserve"><value>Transactie niet gevonden.</value></data>
+  <data name="Text086" xml:space="preserve"><value>Transactie bewerken. De oorspronkelijke rekening blijft behouden.</value></data>
+  <data name="Text087" xml:space="preserve"><value>Maak eerst een rekening aan.</value></data>
+  <data name="Text088" xml:space="preserve"><value>Kies een rekening en datum en vul een omschrijving in.</value></data>
+  <data name="Text089" xml:space="preserve"><value>Transactie opgeslagen.</value></data>
+  <data name="Text090" xml:space="preserve"><value>Nog geen budgetten ingesteld.</value></data>
+  <data name="Text091" xml:space="preserve"><value>Kies een maand.</value></data>
+  <data name="Text092" xml:space="preserve"><value>Budget opgeslagen.</value></data>
+  <data name="Text093" xml:space="preserve"><value>Selecteer eerst een budget.</value></data>
+  <data name="Text094" xml:space="preserve"><value>Budget verwijderen</value></data>
+  <data name="Text095" xml:space="preserve"><value>Dit budget verwijderen?</value></data>
+  <data name="Text096" xml:space="preserve"><value>Verwijderen</value></data>
+  <data name="Text097" xml:space="preserve"><value>Annuleren</value></data>
+  <data name="Text098" xml:space="preserve"><value>Vul een rekeningnaam in.</value></data>
+  <data name="Text099" xml:space="preserve"><value>Vul een geldig beginsaldo in volgens je toestelinstellingen.</value></data>
+  <data name="Text100" xml:space="preserve"><value>Kies een rekeningtype.</value></data>
+  <data name="Text101" xml:space="preserve"><value>De rekening kon niet worden opgeslagen. Probeer opnieuw.</value></data>
+  <data name="Text102" xml:space="preserve"><value>Je overzicht kon niet worden geladen. Probeer opnieuw.</value></data>
+  <data name="Text103" xml:space="preserve"><value>Selecteer een maand.</value></data>
+  <data name="Text104" xml:space="preserve"><value>Nog niet geladen</value></data>
+  <data name="Text105" xml:space="preserve"><value>Nog geen geldig inkomen</value></data>
+  <data name="Text106" xml:space="preserve"><value>Het inkomen kon niet worden geladen. Probeer opnieuw.</value></data>
+  <data name="Text107" xml:space="preserve"><value>Vul een bedrag groter dan nul in met maximaal twee decimalen.</value></data>
+  <data name="Text108" xml:space="preserve"><value>Kies een ingangsdatum.</value></data>
+  <data name="Text109" xml:space="preserve"><value>Er bestaat al een inkomen met deze ingangsdatum. Kies een andere datum.</value></data>
+  <data name="Text110" xml:space="preserve"><value>Opslaan is mislukt. Probeer opnieuw.</value></data>
+  <data name="Text111" xml:space="preserve"><value>Je inkomen is opgeslagen.</value></data>
+  <data name="Text112" xml:space="preserve"><value>Opgeslagen, maar het overzicht kon niet worden vernieuwd. Klik op Vernieuwen.</value></data>
+  <data name="Text113" xml:space="preserve"><value>Maandoverzicht</value></data>
+  <data name="Text114" xml:space="preserve"><value>Geen transacties in deze maand.</value></data>
+  <data name="Text115" xml:space="preserve"><value>Spaardoel aanmaken</value></data>
+  <data name="Text116" xml:space="preserve"><value>Selecteer eerst een spaardoel.</value></data>
+  <data name="Text117" xml:space="preserve"><value>Wijzigingen opslaan</value></data>
+  <data name="Text118" xml:space="preserve"><value>Maak je eerste spaardoel aan.</value></data>
+  <data name="Text119" xml:space="preserve"><value>Vul een naam en doeldatum in.</value></data>
+  <data name="Text120" xml:space="preserve"><value>Gebruik maximaal 100 tekens voor de naam.</value></data>
+  <data name="Text121" xml:space="preserve"><value>Spaardoel opgeslagen.</value></data>
+  <data name="Text122" xml:space="preserve"><value>Voortgang bijgewerkt.</value></data>
+  <data name="Text123" xml:space="preserve"><value>Spaardoel verwijderen</value></data>
+  <data name="Text124" xml:space="preserve"><value>Dit spaardoel verwijderen?</value></data>
+  <data name="Text125" xml:space="preserve"><value>Spaardoel verwijderd.</value></data>
+  <data name="Text126" xml:space="preserve"><value>Nog geen spaarrekening. Maak er een aan om hier je saldo te zien.</value></data>
+  <data name="Text127" xml:space="preserve"><value>De actie is mislukt. Probeer opnieuw.</value></data>
+  <data name="Text128" xml:space="preserve"><value>Vul een geldig bedrag in met maximaal twee decimalen.</value></data>
+  <data name="Text129" xml:space="preserve"><value>Jouw voorkeuren</value></data>
+  <data name="Text130" xml:space="preserve"><value>Maak de app prettig voor jou. Je keuze wordt automatisch bewaard.</value></data>
+  <data name="Text131" xml:space="preserve"><value>Weergave</value></data>
+  <data name="Text132" xml:space="preserve"><value>Thema</value></data>
+  <data name="Text133" xml:space="preserve"><value>Taal</value></data>
+  <data name="Text134" xml:space="preserve"><value>Licht</value></data>
+  <data name="Text135" xml:space="preserve"><value>Donker</value></data>
+  <data name="Text136" xml:space="preserve"><value>Nog geen transacties. Voeg je eerste transactie toe.</value></data>
+  <data name="Text137" xml:space="preserve"><value>Selecteer eerst een transactie.</value></data>
+  <data name="Text138" xml:space="preserve"><value>Transactie verwijderen</value></data>
+  <data name="Text139" xml:space="preserve"><value>Deze transactie verwijderen en het saldo-effect terugdraaien?</value></data>
+  <data name="Text140" xml:space="preserve"><value>BudgetApp</value></data>
+  <data name="Text141" xml:space="preserve"><value>Transacties</value></data>
+  <data name="Text142" xml:space="preserve"><value>Budget</value></data>
+  <data name="Text143" xml:space="preserve"><value>Sparen</value></data>
+  <data name="Text144" xml:space="preserve"><value>Meer</value></data>
+  <data name="Text145" xml:space="preserve"><value>Historiek</value></data>
+  <data name="Text146" xml:space="preserve"><value>Spaardoelen</value></data>
+  <data name="Text147" xml:space="preserve"><value>Rekeningen laden...</value></data>
+  <data name="Text148" xml:space="preserve"><value>Laden mislukt</value></data>
+  <data name="Text149" xml:space="preserve"><value>De rekeningen konden niet worden geladen. Herstart de app om opnieuw te proberen.</value></data>
+  <data name="Text150" xml:space="preserve"><value>OK</value></data>
+  <data name="Text151" xml:space="preserve"><value>Je bewerkt: {0}</value></data>
+  <data name="Text152" xml:space="preserve"><value>{0} actieve doelen · {1} behaald</value></data>
+  <data name="Text153" xml:space="preserve"><value>Bijvoorbeeld: {0:N2}</value></data>
+  <data name="Text154" xml:space="preserve"><value>Naam is verplicht.</value></data>
+  <data name="Text155" xml:space="preserve"><value>Naam is verplicht. (Parameter 'value')</value></data>
+  <data name="Text156" xml:space="preserve"><value>Bedrag mag maximaal twee decimalen bevatten.</value></data>
+  <data name="Text157" xml:space="preserve"><value>Inkomen moet groter zijn dan 0.</value></data>
+  <data name="Text158" xml:space="preserve"><value>Doelbedrag moet groter zijn dan 0.</value></data>
+  <data name="Text159" xml:space="preserve"><value>Huidig bedrag mag niet negatief zijn.</value></data>
+  <data name="Text160" xml:space="preserve"><value>Budgetbedrag moet groter zijn dan 0.</value></data>
+  <data name="Text161" xml:space="preserve"><value>Bedrag moet groter zijn dan 0.</value></data>
+  <data name="Text162" xml:space="preserve"><value>Datums en getallen volgen je toestelinstellingen.</value></data>
+  <data name="ExpenseCategoriesTitle" xml:space="preserve"><value>Uitgaven per categorie</value></data>
+  <data name="ExpenseCategoriesDescription" xml:space="preserve"><value>Zo zijn de uitgaven van deze maand verdeeld over de categorieën.</value></data>
+  <data name="ExpenseCategoriesEmpty" xml:space="preserve"><value>Nog geen uitgaven deze maand. Voeg een uitgave toe om de verdeling te zien.</value></data>
+  <data name="ExpenseCategoriesAccessibility" xml:space="preserve"><value>Cirkeldiagram met uitgaven per categorie deze maand. Bedragen en percentages per categorie staan hieronder.</value></data>
+  <data name="CombinedPieDescription" xml:space="preserve"><value>Uitgaven per categorie en het bedrag dat overblijft. Bij een tekort toont de hele cirkel de uitgaven; het tekort staat bij het nettobedrag.</value></data>
+  <data name="CombinedPieRemaining" xml:space="preserve"><value>Over</value></data>
+  <data name="AccountsTitle" xml:space="preserve"><value>Rekeningen</value></data>
+  <data name="AccountsDescription" xml:space="preserve"><value>Beheer al je rekeningen. Selecteer er hieronder een om actief te maken of te verwijderen.</value></data>
+  <data name="AccountsEmpty" xml:space="preserve"><value>Je hebt nog geen rekeningen. Maak een rekening aan om te beginnen.</value></data>
+  <data name="SelectAccountFirst" xml:space="preserve"><value>Selecteer eerst een rekening.</value></data>
+  <data name="DeleteAccount" xml:space="preserve"><value>Geselecteerde rekening verwijderen</value></data>
+  <data name="DeleteAccountConfirm" xml:space="preserve"><value>Rekening ‘{0}’ en alle bijbehorende transacties, inkomens, budgetten en spaardoelen definitief verwijderen? Dit kan niet ongedaan worden gemaakt.</value></data>
+  <data name="AccountDeleted" xml:space="preserve"><value>De rekening en alle gekoppelde gegevens zijn verwijderd.</value></data>
+  <data name="AccountTransactionsEmpty" xml:space="preserve"><value>Nog geen transacties voor deze rekening.</value></data>
+  <data name="AccountGoalsDescription" xml:space="preserve"><value>Je ziet en beheert alleen de spaardoelen van de geselecteerde rekening.</value></data>
+  <data name="UnassignedGoalsTitle" xml:space="preserve"><value>Nog te koppelen spaardoelen</value></data>
+  <data name="UnassignedGoalsDescription" xml:space="preserve"><value>Deze bestaande doelen hebben nog geen rekening. Kies een doel en koppel het aan de hierboven geselecteerde rekening.</value></data>
+  <data name="AssignGoal" xml:space="preserve"><value>Koppelen aan geselecteerde rekening</value></data>
+  <data name="SelectGoalAndAccount" xml:space="preserve"><value>Kies een rekening en een nog te koppelen spaardoel.</value></data>
+  <data name="GoalAssigned" xml:space="preserve"><value>Het spaardoel is aan de rekening gekoppeld.</value></data>
+  <data name="NoAccountGoals" xml:space="preserve"><value>Nog geen spaardoelen voor deze rekening.</value></data>
+  <data name="ActiveAccount" xml:space="preserve"><value>Actieve rekening</value></data>
+  <data name="ActivateAccount" xml:space="preserve"><value>Geselecteerde rekening gebruiken</value></data>
+  <data name="AccountActivated" xml:space="preserve"><value>‘{0}’ is nu de actieve rekening in de hele app.</value></data>
+  <data name="SelectedAccountBalance" xml:space="preserve"><value>Saldo van de actieve rekening.</value></data>
+  <data name="ActiveSavingsDescription" xml:space="preserve"><value>Het saldo en de spaardoelen van je actieve rekening. Bijdragen houden je voortgang bij; ze verplaatsen geen geld.</value></data>
+  <data name="LegacyIncomeTitle" xml:space="preserve"><value>Nog te koppelen inkomen</value></data>
+  <data name="LegacyBudgetTitle" xml:space="preserve"><value>Nog te koppelen budgetten</value></data>
+  <data name="LegacyDescription" xml:space="preserve"><value>Deze bestaande gegevens hebben nog geen rekening en tellen niet mee in de totalen. Kies een item om aan de actieve rekening te koppelen.</value></data>
+  <data name="LinkActiveAccount" xml:space="preserve"><value>Koppelen aan actieve rekening</value></data>
+  <data name="LegacyConflict" xml:space="preserve"><value>Deze rekening heeft al een overeenkomstig item voor deze datum of categorie en maand. Het oude item is ongewijzigd bewaard.</value></data>
+  <data name="LegacyAssigned" xml:space="preserve"><value>Het item is gekoppeld aan de actieve rekening.</value></data>
+  <data name="DashboardAccountBalance" xml:space="preserve"><value>Rekeningsaldo</value></data>
+  <data name="DashboardAccountBalanceDescription" xml:space="preserve"><value>Het beginsaldo van je actieve rekening plus geboekte transacties. Ingesteld inkomen verandert dit saldo niet.</value></data>
+  <data name="CurrencyLabel" xml:space="preserve"><value>Valuta</value></data>
+</root>

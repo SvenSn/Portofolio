@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:loc="clr-namespace:BudgetApp.App.Localization"
+ xmlns:vm="clr-namespace:BudgetApp.App.ViewModels"
+ xmlns:entities="clr-namespace:BudgetApp.Domain.Entities;assembly=BudgetApp.Domain"
+ x:Class="BudgetApp.App.Views.TransactionPage" x:DataType="vm:TransactionsViewModel" Title="{loc:Translate Text081}">
+ <ScrollView>
+<Grid Style="{StaticResource ScreenLayoutStyle}">
+<VerticalStackLayout MaximumWidthRequest="760" HorizontalOptions="Fill" Spacing="20">
+ <Label Text="{loc:Translate Text081}" Style="{StaticResource Headline}" />
+ <Label Text="{loc:Translate Text082}" Style="{StaticResource FormDescriptionStyle}" />
+ <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" />
+ <Label Text="{Binding Message}" />
+ <VerticalStackLayout Spacing="16" IsEnabled="{Binding IsReady}">
+<Button Text="{loc:Translate Text001}" Command="{Binding AddCommand}" MinimumHeightRequest="48" />
+<CollectionView ItemsSource="{Binding Items}" SelectionMode="Single" SelectedItem="{Binding Selected}" HeightRequest="320">
+<CollectionView.EmptyView>
+<Label Text="{loc:Translate Text016}" />
+</CollectionView.EmptyView>
+<CollectionView.ItemTemplate>
+<DataTemplate x:DataType="entities:Transaction">
+<VerticalStackLayout Padding="12,16" Spacing="8">
+<Label Text="{Binding Description}" />
+<Label Text="{Binding Amount, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Money}" />
+<Label Text="{Binding Type, Converter={StaticResource EnumTextConverter}}" />
+<Label Text="{Binding Date, Converter={StaticResource LocalizedValueConverter}, ConverterParameter=Date}" />
+</VerticalStackLayout>
+</DataTemplate>
+</CollectionView.ItemTemplate>
+</CollectionView>
+<Button Text="{loc:Translate Text083}" Command="{Binding EditCommand}" MinimumHeightRequest="48" />
+<Button Text="{loc:Translate Text084}" Command="{Binding DeleteCommand}" Style="{StaticResource DeleteActionStyle}" />
+</VerticalStackLayout>
+ <Button Text="{loc:Translate Text010}" Command="{Binding LoadCommand}" Style="{StaticResource QuietActionStyle}" />
+ </VerticalStackLayout>
+</Grid>
+</ScrollView>
+</ContentPage>
